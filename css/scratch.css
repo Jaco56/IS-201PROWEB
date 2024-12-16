@@ -1,0 +1,153 @@
+body, h1, h2, p, ul, ol, nav, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Poppins', sans-serif; /* A modern, clean font */
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #ffffff, #e0f7fa); /* Soft gradient */
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    background: #00796b; /* Dark teal */
+    color: white;
+    padding: 20px 0;
+    border-bottom: 5px solid #004d40; /* Add a bold accent */
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header nav a {
+    margin: 0 15px;
+    color: #e0f7fa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  header nav a:hover {
+    color: #ffcc00; /* Gold hover effect */
+  }
+  
+  /* Section Styling */
+  section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add interactivity */
+  }
+  
+  section:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 15px;
+  }
+  
+  section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #004d40; /* Teal border for images */
+    border-radius: 8px;
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* Interactive effect */
+  }
+  
+  section img:hover {
+    transform: scale(1.05); /* Subtle zoom effect */
+  }
+  
+  /* Embedded Video Styling */
+  iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for videos */
+  }
+  
+  /* List Styling */
+  ol, ul {
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 800px;
+  }
+  
+  li {
+    margin: 10px 0;
+    color: #00796b; /* Teal text for list items */
+    font-size: 1.1rem;
+  }
+  
+  ol > li > ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: circle; /* Nested list style */
+  }
+  
+  /* Navigation Links */
+  nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #004d40; /* Teal background */
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background: #ffcc00; /* Gold background on hover */
+    color: #004d40; /* Teal text on hover */
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: #00796b; /* Dark teal */
+    color: white;
+    font-size: 0.9rem;
+    border-top: 5px solid #004d40; /* Accent line */
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Interactive Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    animation: fadeIn 0.8s ease-in-out;
+  }
